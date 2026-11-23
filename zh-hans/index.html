@@ -1,145 +1,235 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hans">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Med-X — 为 iPhone 打造的加密家庭健康档案库</title>
-  <meta name="description" content="本地识别化验单、体检报告、影像与心电图，自动换算跨医院单位趋势、管理全家疫苗与用药，并生成清晰的「给医生」就诊摘要——全程离线加密保存在你的 iPhone 中。">
-  <link rel="canonical" href="https://yhxuee.github.io/medx-page/zh-hans/index.html">
-  <link rel="alternate" hreflang="en" href="https://yhxuee.github.io/medx-page/index.html">
-  <link rel="alternate" hreflang="zh-Hans" href="https://yhxuee.github.io/medx-page/zh-hans/index.html">
-  <link rel="alternate" hreflang="zh-Hant" href="https://yhxuee.github.io/medx-page/zh-hant/index.html">
-  <link rel="alternate" hreflang="x-default" href="https://yhxuee.github.io/medx-page/index.html">
-  <link rel="icon" type="image/png" href="../assets/img/icon-light.png">
-  <link rel="apple-touch-icon" href="../assets/img/icon-light.png">
-  <meta property="og:title" content="Med-X — 为 iPhone 打造的加密家庭健康档案库">
-  <meta property="og:description" content="本地识别化验单、体检报告、影像与心电图，自动换算跨医院单位趋势、管理全家疫苗与用药，并生成清晰的「给医生」就诊摘要——全程离线加密保存在你的 iPhone 中。">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#000000">
+  <title>Med-X — 清晰、私密的家庭医疗档案</title>
+  <meta name="description" content="拍照整理化验单与体检报告，自动追踪跨院趋势，并生成一页「给医生」就诊摘要。所有记录仅保存在你的设备上。">
+  <link rel="canonical" href="https://med-x.org/zh-hans/index.html">
+  <link rel="alternate" hreflang="en" href="https://med-x.org/index.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://med-x.org/zh-hans/index.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://med-x.org/zh-hant/index.html">
+  <link rel="alternate" hreflang="x-default" href="https://med-x.org/index.html">
+  <link rel="icon" type="image/png" href="../assets/img/icon-dark.png">
+  <link rel="apple-touch-icon" href="../assets/img/icon-dark.png">
+  <meta property="og:title" content="Med-X — 清晰、私密的家庭医疗档案">
+  <meta property="og:description" content="拍照整理化验单与体检报告，自动追踪跨院趋势，并生成一页「给医生」就诊摘要。所有记录仅保存在你的设备上。">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yhxuee.github.io/medx-page/zh-hans/index.html">
-  <meta property="og:image" content="https://yhxuee.github.io/medx-page/assets/img/icon-light.png">
+  <meta property="og:url" content="https://med-x.org/zh-hans/index.html">
+  <meta property="og:image" content="https://med-x.org/assets/img/icon-dark.png">
   <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="nav-inner">
-      <a class="brand" href="../zh-hans/index.html">
-        <span class="brand-icon"><picture><source srcset="../assets/img/icon-dark.png" media="(prefers-color-scheme: dark)"><img src="../assets/img/icon-light.png" alt="Med-X"></picture></span>
+  <header class="site-nav">
+    <nav class="nav-container" aria-label="Med-X">
+      <a href="../zh-hans/index.html" class="brand">
+        <img src="../assets/img/icon-dark.png" alt="Med-X" width="28" height="28">
         <span>Med-X</span>
       </a>
-      <nav class="nav-links" aria-label="Main">
-        <a href="../zh-hans/index.html" class="active">产品概览</a>
-        <a href="../zh-hans/manual.html">使用手册</a>
-        <a href="../zh-hans/privacy.html">隐私政策</a>
-        <a href="../zh-hans/terms.html">使用条款</a>
-      </nav>
-      <div class="lang-switch" aria-label="Language"><a href="../index.html">English</a><a href="../zh-hans/index.html" class="current">简体中文</a><a href="../zh-hant/index.html">繁體中文</a></div>
-    </div>
+      <ul class="nav-links">
+        <li><a href="../zh-hans/index.html" class="active">首页</a></li>
+        <li><a href="../zh-hans/manual.html">使用说明</a></li>
+        <li><a href="../zh-hans/terms.html">使用条款</a></li>
+        <li><a href="../zh-hans/privacy.html">隐私政策</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-switch" aria-label="语言"><a href="../index.html" lang="en">EN</a><a href="../zh-hans/index.html" class="active" lang="zh-Hans">简</a><a href="../zh-hant/index.html" lang="zh-Hant">繁</a></div>
+        <a href="mailto:contact@yhxue.com" class="btn-nav-cta">联系我们</a>
+      </div>
+    </nav>
   </header>
 
   <main>
 
-    <section class="hero">
-      <div class="hero-glow" aria-hidden="true"></div>
-      <div class="container">
-        <div class="hero-app-icon"><picture><source srcset="../assets/img/icon-dark.png" media="(prefers-color-scheme: dark)"><img src="../assets/img/icon-light.png" alt="Med-X App Icon"></picture></div>
-        <div class="eyebrow">本地加密 · 零云端架构</div>
-        <h1>每一份医疗报告，<br>只在你的手机里，从不上云。</h1>
-        <p class="hero-lead">Med-X 将纸质化验单、多页体检报告、影像检查与心电图整理为可检索的结构化记录与就诊摘要——所有数据按成员独立加密存储于本机 SQLCipher 数据库。</p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="../zh-hans/manual.html">阅读使用手册</a>
-          <a class="btn btn-secondary" href="../zh-hans/privacy.html">了解隐私保护</a>
+    <section class="hero" id="overview">
+      <div class="hero-eyebrow"><span>版本 1.0.0 · 私密家庭健康档案</span></div>
+      <h1 class="hero-title">让家人的医疗记录，井然有序。</h1>
+      <p class="hero-subtitle">把散落的纸质化验单、体检报告、影像说明与心电图，整理成清晰可查的家庭档案——安心保存在你的设备上。</p>
+      <div class="hero-actions">
+        <a href="../zh-hans/manual.html" class="btn-primary">阅读使用说明</a>
+        <a href="../zh-hans/privacy.html" class="btn-secondary">查看隐私政策</a>
+      </div>
+      <div class="hero-device-wrapper">
+        <div class="hero-device-frame">
+          <div class="hero-device-screen">
+            <img src="../assets/img/shot-zh-hans-summary.png" alt="Med-X 概览页：近期关键指标、用药提醒与 Apple 健康汇总">
+          </div>
         </div>
-        <div class="trust-strip"><span class="trust-pill"><span class="trust-dot blue"></span>分成员独立 SQLCipher 加密库</span><span class="trust-pill"><span class="trust-dot coral"></span>零网络传输 · 零追踪分析</span><span class="trust-pill"><span class="trust-dot indigo"></span>本机 Vision OCR 与多语种目录</span><span class="trust-pill"><span class="trust-dot green"></span>简体中文 · 繁體中文 · English</span></div>
-        <div class="showcase-strip"><figure class="device-shot">
-          <img src="../assets/img/shot-zh-hans-summary.png" alt="概览 · 异常提醒、复查计划与重点指标" loading="lazy">
-          <figcaption>概览 · 异常提醒、复查计划与重点指标</figcaption>
-        </figure><figure class="device-shot">
-          <img src="../assets/img/shot-zh-hans-records.png" alt="记录 · 体检整包拆分与按就诊分组" loading="lazy">
-          <figcaption>记录 · 体检整包拆分与按就诊分组</figcaption>
-        </figure><figure class="device-shot">
-          <img src="../assets/img/shot-zh-hans-trends.png" alt="趋势 · 跨医院单位换算与参考范围带" loading="lazy">
-          <figcaption>趋势 · 跨医院单位换算与参考范围带</figcaption>
-        </figure><figure class="device-shot">
-          <img src="../assets/img/shot-zh-hans-visit.png" alt="准备就诊 · 给医生摘要与 PDF 导出" loading="lazy">
-          <figcaption>准备就诊 · 给医生摘要与 PDF 导出</figcaption>
-        </figure></div>
+        <p class="hero-device-caption">Med-X 概览页：近期关键指标、用药提醒与 Apple 健康汇总</p>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2>临床严谨度，匹配 Apple 级隐私</h2>
-          <p>不靠大模型臆测病情。每一条数值、参考范围与诊断结论都锚定到原报告行图，有据可查。</p>
-        </div>
-        <div class="bento-grid">
-        <article class="bento-card span-7">
-          <div>
-            <span class="card-badge badge-blue">本机智能识别</span>
-            <h3 style="margin-top:14px;">纸质报告拍照识别，逐行可溯源</h3>
-            <p>支持文档扫描、隐私照片选择、从「文件」导入 PDF 或图片（单次最高 30 页 / 15 MB）及手动笔记。结合倾斜校正与递归版面分块，精准覆盖七大医学检查类别。</p>
-          </div>
-          <ul class="feature-list"><li>覆盖检验、病理、影像、核医学、内镜、电生理（含心电图波形保留）及功能检查</li><li>自动将多科混合的「健康体检报告」按科室拆分为关联整包，总检结论置顶呈现</li><li>置信度角标标注需核对项，点击行内切片即可全屏放大对照原图</li><li>支持随时修改已保存报告，保留原始印刷读数与完整修订历史</li></ul>
-        </article>
-        <article class="bento-card span-5">
-          <div>
-            <span class="card-badge badge-coral">趋势与随访提醒</span>
-            <h3 style="margin-top:14px;">跨医院对比，不错过复查节点</h3>
-            <p>不同医院单位不统一？Med-X 依据目录换算规则自动统一至你最常用的单位，并在折线图后方绘制每份报告自带的参考范围带。</p>
-          </div>
-          <ul class="feature-list"><li>自动识别结论中的复查周期（如“6个月后复查胸部CT”），可一键写入系统日历</li><li>「病情经过」按时间梳理历次诊断，每句话附带原始报告编号引用</li><li>支持一键导出 UTF-8 BOM 格式 CSV，在 Excel 与 Numbers 中零乱码打开</li></ul>
-        </article>
-        <article class="bento-card span-5">
-          <div>
-            <span class="card-badge badge-indigo">就诊准备</span>
-            <h3 style="margin-top:14px;">带着一页清晰清单走进诊室</h3>
-            <p>通过结构化 OLDCARTS 症状记录与保守急症红旗拦截整理主诉，一键生成符合医生阅读习惯的「给医生」参考页，支持全屏交接模式与 A4/Letter 分页 PDF 导出。</p>
-          </div>
-          <ul class="feature-list"><li>汇总安全警示、当前用药、异常化验（附上次对照）、原报告结论与患者提问</li><li>可选开启本机 Apple 智能改写病史摘要，并逐句通过本地规则核验</li></ul>
-        </article>
-        <article class="bento-card span-7">
-          <div>
-            <span class="card-badge badge-green">家庭档案、疫苗与 Apple 健康</span>
-            <h3 style="margin-top:14px;">一家人的健康资料，分库隔离守护</h3>
-            <p>为自己、父母与孩子建立各自独立的加密档案库，支持离线疫苗接种建议、药品重复成分检测以及本机只读 Apple 健康汇总。</p>
-          </div>
-          <ul class="feature-list"><li>内置 39 种疫苗数据库与国家免疫规划 / CDC ACIP 建议，支持拍摄接种本自动填表</li><li>离线检索 3,375 种药品成分与 5,728 个商品名，自动预警重复成分叠加风险</li><li>本机只读最近 90 天 Apple 健康、Apple Watch 心电图 I 导联波形、睡眠阶段与用药记录</li></ul>
-        </article></div>
-      </div>
-    </section>
-
-    <section class="section" style="padding-top: 12px;">
-      <div class="container">
-        <div class="section-header">
-          <h2>从底层架构保证可信与透明</h2>
-          <p>无云端服务器、无广告、无数据采集——所有医学标准术语与开源许可均在 App 内公开列明。</p>
-        </div>
-        <div class="spec-grid"><div class="spec-card">
-          <div class="spec-value">0 字节</div>
-          <div class="spec-label">上传至外部服务器。应用内无网络客户端、无统计 SDK、无云端 AI。</div>
-        </div><div class="spec-card">
-          <div class="spec-value">450+ / 1,280</div>
-          <div class="spec-label">精编七大类检查项目与 LOINC 2.83 常用检验，完整支持简/繁/英交叉匹配。</div>
-        </div><div class="spec-card">
-          <div class="spec-value">SQLCipher 4.19</div>
-          <div class="spec-label">分成员独立加密数据库，配合 AES-GCM 注册表与系统完全文件保护。</div>
+    <section class="highlights">
+      <div class="highlights-grid"><div class="highlight-item">
+          <div class="highlight-icon" aria-hidden="true">🛡️</div>
+          <h3 class="highlight-title">仅保存在设备</h3>
+          <p class="highlight-desc">无需注册账号，家人的健康档案始终留在你的 iPhone 或 iPad 上。</p>
+        </div><div class="highlight-item">
+          <div class="highlight-icon" aria-hidden="true">📄</div>
+          <h3 class="highlight-title">扫描并逐项核对</h3>
+          <p class="highlight-desc">支持相机、照片与 PDF 导入，识别结果可对照原图清晰核对。</p>
+        </div><div class="highlight-item">
+          <div class="highlight-icon" aria-hidden="true">📈</div>
+          <h3 class="highlight-title">跨院趋势一目了然</h3>
+          <p class="highlight-desc">自动统一不同医院的常用单位，在一张图表里看清长期变化。</p>
+        </div><div class="highlight-item">
+          <div class="highlight-icon" aria-hidden="true">🩺</div>
+          <h3 class="highlight-title">就诊前一键成页</h3>
+          <p class="highlight-desc">带着一页「给医生」参考摘要走进诊室，沟通更高效从容。</p>
         </div></div>
+    </section>
+
+    <section class="bento-section" id="features">
+      <div class="section-header">
+        <div class="section-eyebrow">为清晰与从容而设计</div>
+        <h2 class="section-title">看病前后，重要信息触手可及。</h2>
+        <p class="section-subtitle">围绕真实纸质报告、跨院复查与诊室沟通打磨每一处细节。</p>
+      </div>
+      <div class="bento-grid">
+        <article class="bento-card col-7" id="scan">
+          <div class="bento-tag">报告与体检整理</div>
+          <h3 class="bento-title">纸质报告拍进来，结构化档案整理好。</h3>
+          <p class="bento-desc">支持相机扫描、照片选取或导入 PDF 文件。多页综合体检报告会自动按科室归类，纸质心电图保留高清原图以便缩放查看；需要确认的条目会清楚标注，方便你保存前对照原图核对。</p>
+          <div class="bento-media bento-media-split"><img src="../assets/img/shot-zh-hans-summary.png" alt="Med-X 概览界面" loading="lazy"><img src="../assets/img/shot-zh-hans-records.png" alt="按时间与类别整理的医疗记录" loading="lazy"></div>
+        </article>
+        <article class="bento-card col-5" id="trends">
+          <div class="bento-tag green">趋势与复查提醒</div>
+          <h3 class="bento-title">跨院区的数值变化，一张图看懂。</h3>
+          <p class="bento-desc">不同医院的检验单位自动换算为你习惯的单位，并在曲线后方保留每份报告自身的参考范围。结论里提到的复查周期也能一键加入日历提醒。</p>
+          <div class="bento-media"><img src="../assets/img/shot-zh-hans-trends.png" alt="带参考范围的检验趋势图" loading="lazy"></div>
+        </article>
+        <article class="bento-card col-6" id="visit">
+          <div class="bento-tag orange">准备就诊</div>
+          <h3 class="bento-title">带着「给医生」摘要，从容进诊室。</h3>
+          <p class="bento-desc">按步骤梳理本次症状与想问医生的问题，自动生成符合医生阅读习惯的一页摘要——包含过敏警示、当前用药、近期异常变化与报告结论，支持全屏展示或分享打印。</p>
+          <div class="bento-media"><img src="../assets/img/shot-zh-hans-visit.png" alt="准备就诊与给医生摘要页" loading="lazy"></div>
+        </article>
+        <article class="bento-card col-6" id="family">
+          <div class="bento-tag purple">家庭成员、用药与疫苗</div>
+          <h3 class="bento-title">全家人的健康档案，各自独立保管。</h3>
+          <p class="bento-desc">为自己、父母或孩子建立相互独立的档案空间。记录在用药物并提示重复成分，管理全家疫苗接种记录，把过敏史与重要安全信息放在随时可见的位置。</p>
+          <div class="apple-features-subgrid"><div class="sub-feature-item">
+                  <div class="sub-feature-icon" aria-hidden="true">👨‍👩‍👧</div>
+                  <div class="sub-feature-title">多成员档案</div>
+                  <div class="sub-feature-desc">轻松切换家庭成员，记录彼此独立保管。</div>
+                </div><div class="sub-feature-item">
+                  <div class="sub-feature-icon" aria-hidden="true">💊</div>
+                  <div class="sub-feature-title">用药与成分提醒</div>
+                  <div class="sub-feature-desc">添加药物时自动提醒是否存在相同有效成分。</div>
+                </div><div class="sub-feature-item">
+                  <div class="sub-feature-icon" aria-hidden="true">💉</div>
+                  <div class="sub-feature-title">疫苗接种</div>
+                  <div class="sub-feature-desc">可拍摄接种记录并查看常规免疫接种建议。</div>
+                </div><div class="sub-feature-item">
+                  <div class="sub-feature-icon" aria-hidden="true">📋</div>
+                  <div class="sub-feature-title">病情经过</div>
+                  <div class="sub-feature-desc">按时间梳理重要诊断，并关联回原始报告。</div>
+                </div></div>
+        </article>
+        <article class="bento-card col-12" id="apple">
+          <div class="bento-tag">Apple 生态体验</div>
+          <h3 class="bento-title">贴合你的 Apple 设备，流畅而克制。</h3>
+          <p class="bento-desc">融入你熟悉的系统能力，同时始终守护健康记录的私密性。</p>
+          <div class="apple-features-subgrid"><div class="sub-feature-item">
+                  <div class="sub-feature-icon" aria-hidden="true">✨</div>
+                  <div class="sub-feature-title">Apple 智能</div>
+                  <div class="sub-feature-desc">在受支持设备上可选启用，辅助整理疑难报告文字与生成病史摘要，全程在设备上完成。</div>
+                </div><div class="sub-feature-item">
+                  <div class="sub-feature-icon" aria-hidden="true">❤️</div>
+                  <div class="sub-feature-title">Apple 健康</div>
+                  <div class="sub-feature-desc">将近期睡眠、心率、步数与 Apple Watch 心电图与临床报告同屏对照。</div>
+                </div><div class="sub-feature-item">
+                  <div class="sub-feature-icon" aria-hidden="true">🔐</div>
+                  <div class="sub-feature-title">面容 ID 锁</div>
+                  <div class="sub-feature-desc">可按需开启面容 ID 保护，离开应用即自动锁定。</div>
+                </div><div class="sub-feature-item">
+                  <div class="sub-feature-icon" aria-hidden="true">📱</div>
+                  <div class="sub-feature-title">iPhone、Duo 与 iPad</div>
+                  <div class="sub-feature-desc">针对直板机、折叠屏与大屏 iPad 分别打磨舒适阅读体验。</div>
+                </div></div>
+        </article></div>
+    </section>
+
+    <section class="privacy-section" id="privacy">
+      <div class="privacy-container">
+        <div class="privacy-badge"><span>🛡️ 隐私优先</span></div>
+        <h2 class="privacy-title">健康档案，理应只属于你自己。</h2>
+        <p class="privacy-subtitle">Med-X 可离线运行于你的设备，无需注册账号，不上传云端，也没有任何广告或行为追踪。</p>
+        <div class="privacy-grid"><div class="privacy-item">
+          <div class="privacy-icon" aria-hidden="true">🔒</div>
+          <div class="privacy-heading">无需注册账号</div>
+          <div class="privacy-text">打开即可使用，不需要手机号、邮箱或云端登录。</div>
+        </div><div class="privacy-item">
+          <div class="privacy-icon" aria-hidden="true">📱</div>
+          <div class="privacy-heading">保存在你的设备</div>
+          <div class="privacy-text">报告、趋势、笔记与家庭成员档案均留在设备本地。</div>
+        </div><div class="privacy-item">
+          <div class="privacy-icon" aria-hidden="true">👁️</div>
+          <div class="privacy-heading">可选面容 ID 锁</div>
+          <div class="privacy-text">生物识别由 Apple 系统处理，Med-X 不接触你的面容数据。</div>
+        </div><div class="privacy-item">
+          <div class="privacy-icon" aria-hidden="true">📤</div>
+          <div class="privacy-heading">去向由你决定</div>
+          <div class="privacy-text">除非你主动导出文件或发送反馈邮件，任何信息都不会离开设备。</div>
+        </div></div>
+      </div>
+    </section>
+
+    <section class="closing-cta">
+      <img src="../assets/img/icon-dark.png" alt="Med-X App Icon" class="closing-icon" width="72" height="72">
+      <h2 class="closing-title">记录更清晰，看病更从容。</h2>
+      <p class="closing-subtitle">浏览分步使用说明，或随时发邮件与我们交流建议与问题。</p>
+      <div class="hero-actions">
+        <a href="../zh-hans/manual.html" class="btn-primary">阅读使用说明</a>
+        <a href="mailto:contact@yhxue.com" class="btn-secondary">发邮件至 contact@yhxue.com</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>© 2026 Med-X. 保留所有权利。</div>
-        <div class="footer-links">
-          <a href="../zh-hans/index.html">产品概览</a>
-          <a href="../zh-hans/manual.html">使用手册</a>
-          <a href="../zh-hans/privacy.html">隐私政策</a>
-          <a href="../zh-hans/terms.html">使用条款</a>
+    <div class="footer-container">
+      <div class="footer-links-grid">
+        <div class="footer-col">
+          <div class="footer-col-title">产品</div>
+          <ul>
+            <li><a href="../zh-hans/index.html#overview">概览</a></li>
+            <li><a href="../zh-hans/index.html#features">核心功能</a></li>
+            <li><a href="../zh-hans/index.html#privacy">隐私保护</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">使用指南</div>
+          <ul>
+            <li><a href="../zh-hans/manual.html">使用说明</a></li>
+            <li><a href="../zh-hans/manual.html#section-8">常见问题</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">法律信息</div>
+          <ul>
+            <li><a href="../zh-hans/privacy.html">隐私政策</a></li>
+            <li><a href="../zh-hans/terms.html">使用条款</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">支持与联系</div>
+          <ul>
+            <li><a href="mailto:contact@yhxue.com">contact@yhxue.com</a></li>
+            <li><a href="../zh-hans/manual.html#section-7">日志与反馈</a></li>
+          </ul>
         </div>
       </div>
-      <p class="footer-note">Med-X 为个人健康档案整理与就诊准备工具，不提供医疗诊断、治疗方案、处方建议或临床放行结论。如遇紧急医疗情况，请立即拨打当地急救电话。</p>
+
+      <div class="footer-bottom">
+        <p class="footer-legal-text">Med-X 用于整理个人与家庭健康档案并辅助就诊准备，不属于医疗器械，亦不提供医疗诊断、治疗方案或临床决策依据。Apple、iPhone、iPad、Apple Watch、Face ID 与 Apple 健康为 Apple Inc. 的注册商标。<br>版权所有 © 2026 Yuhang XUE。保留所有权利。</p>
+        <div class="footer-lang-row">
+          <a href="../index.html">English</a> ·
+          <a href="../zh-hans/index.html">简体中文</a> ·
+          <a href="../zh-hant/index.html">繁體中文</a>
+        </div>
+      </div>
     </div>
   </footer>
 </body>

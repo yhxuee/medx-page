@@ -1,168 +1,188 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hans">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>使用手册 — Med-X</title>
-  <meta name="description" content="Med-X 完整操作指南：报告导入核对、体检拆分、趋势对比、就诊准备与家庭加密档案管理。">
-  <link rel="canonical" href="https://yhxuee.github.io/medx-page/zh-hans/manual.html">
-  <link rel="alternate" hreflang="en" href="https://yhxuee.github.io/medx-page/manual.html">
-  <link rel="alternate" hreflang="zh-Hans" href="https://yhxuee.github.io/medx-page/zh-hans/manual.html">
-  <link rel="alternate" hreflang="zh-Hant" href="https://yhxuee.github.io/medx-page/zh-hant/manual.html">
-  <link rel="alternate" hreflang="x-default" href="https://yhxuee.github.io/medx-page/manual.html">
-  <link rel="icon" type="image/png" href="../assets/img/icon-light.png">
-  <link rel="apple-touch-icon" href="../assets/img/icon-light.png">
-  <meta property="og:title" content="使用手册 — Med-X">
-  <meta property="og:description" content="Med-X 完整操作指南：报告导入核对、体检拆分、趋势对比、就诊准备与家庭加密档案管理。">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#000000">
+  <title>Med-X 使用说明</title>
+  <meta name="description" content="分步了解如何在 Med-X 中导入医疗报告、追踪检验趋势、准备就诊摘要以及管理隐私与反馈日志。">
+  <link rel="canonical" href="https://med-x.org/zh-hans/manual.html">
+  <link rel="alternate" hreflang="en" href="https://med-x.org/manual.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://med-x.org/zh-hans/manual.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://med-x.org/zh-hant/manual.html">
+  <link rel="alternate" hreflang="x-default" href="https://med-x.org/manual.html">
+  <link rel="icon" type="image/png" href="../assets/img/icon-dark.png">
+  <link rel="apple-touch-icon" href="../assets/img/icon-dark.png">
+  <meta property="og:title" content="Med-X 使用说明">
+  <meta property="og:description" content="分步了解如何在 Med-X 中导入医疗报告、追踪检验趋势、准备就诊摘要以及管理隐私与反馈日志。">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yhxuee.github.io/medx-page/zh-hans/manual.html">
-  <meta property="og:image" content="https://yhxuee.github.io/medx-page/assets/img/icon-light.png">
+  <meta property="og:url" content="https://med-x.org/zh-hans/manual.html">
+  <meta property="og:image" content="https://med-x.org/assets/img/icon-dark.png">
   <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="nav-inner">
-      <a class="brand" href="../zh-hans/index.html">
-        <span class="brand-icon"><picture><source srcset="../assets/img/icon-dark.png" media="(prefers-color-scheme: dark)"><img src="../assets/img/icon-light.png" alt="Med-X"></picture></span>
+  <header class="site-nav">
+    <nav class="nav-container" aria-label="Med-X">
+      <a href="../zh-hans/index.html" class="brand">
+        <img src="../assets/img/icon-dark.png" alt="Med-X" width="28" height="28">
         <span>Med-X</span>
       </a>
-      <nav class="nav-links" aria-label="Main">
-        <a href="../zh-hans/index.html">产品概览</a>
-        <a href="../zh-hans/manual.html" class="active">使用手册</a>
-        <a href="../zh-hans/privacy.html">隐私政策</a>
-        <a href="../zh-hans/terms.html">使用条款</a>
-      </nav>
-      <div class="lang-switch" aria-label="Language"><a href="../manual.html">English</a><a href="../zh-hans/manual.html" class="current">简体中文</a><a href="../zh-hant/manual.html">繁體中文</a></div>
-    </div>
+      <ul class="nav-links">
+        <li><a href="../zh-hans/index.html">首页</a></li>
+        <li><a href="../zh-hans/manual.html" class="active">使用说明</a></li>
+        <li><a href="../zh-hans/terms.html">使用条款</a></li>
+        <li><a href="../zh-hans/privacy.html">隐私政策</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-switch" aria-label="语言"><a href="../manual.html" lang="en">EN</a><a href="../zh-hans/manual.html" class="active" lang="zh-Hans">简</a><a href="../zh-hant/manual.html" lang="zh-Hant">繁</a></div>
+        <a href="mailto:contact@yhxue.com" class="btn-nav-cta">联系我们</a>
+      </div>
+    </nav>
   </header>
 
   <main>
 
     <section class="doc-hero">
-      <div class="container">
-        <div class="eyebrow">帮助文档</div>
-        <h1>Med-X 使用手册</h1>
-        <p>了解如何高效扫描与核对检查报告、追踪跨院检验趋势、管理家人疫苗用药，并在就医前生成专业交接摘要。</p>
-        <div class="doc-meta">适用版本：Med-X 1.0 · 支持 iOS 17 及以上系统（Apple 智能改写需支持的 iOS 26+ 机型）</div>
-      </div>
+      <div class="hero-eyebrow"><span>使用说明</span></div>
+      <h1 class="doc-title">Med-X 使用说明</h1>
+      <div class="doc-intro"><p>更新于 2026 年 11 月 24 日。选择下方主题即可按步骤操作，界面示例均使用演示数据。</p></div>
+      
     </section>
-    <div class="container">
-      <div class="doc-layout">
-        <aside class="doc-sidebar" aria-label="目录">
-          <div class="doc-sidebar-title">目录</div>
-          <ul class="doc-toc"><li><a href="#vault-security">1. 快速开始与档案库安全</a></li><li><a href="#importing-reports">2. 导入与核对检查报告</a></li><li><a href="#trends-followups">3. 趋势追踪、随访与病史摘要</a></li><li><a href="#visit-prep">4. 就诊准备与「给医生」参考页</a></li><li><a href="#family-vaccines-meds">5. 家庭成员、疫苗接种与用药管理</a></li><li><a href="#apple-health">6. Apple 健康集成（仅限本机机主）</a></li><li><a href="#on-device-learning">7. 本机自适应学习与多语言切换</a></li><li><a href="#sources-licences">8. 医学知识来源与开源许可</a></li></ul>
-        </aside>
-        <article class="doc-content">
-          <section id="vault-security">
-          <h2>1. 快速开始与档案库安全</h2>
+    <div class="doc-layout">
+      <nav class="doc-toc" aria-label="目录">
+        <h2>目录</h2>
+        <ol><li><a href="#section-1">导入并核对报告</a></li><li><a href="#section-2">概览与趋势追踪</a></li><li><a href="#section-3">准备就诊与「给医生」摘要</a></li><li><a href="#section-4">家庭成员、用药与疫苗</a></li><li><a href="#section-5">Apple 智能与端侧学习</a></li><li><a href="#section-6">Apple 健康、面容 ID 与删除数据</a></li><li><a href="#section-7">日志与反馈</a></li><li><a href="#section-8">常见问题</a></li></ol>
+      </nav>
+      <article class="doc-body">
+        <section class="doc-section">
+          <h2 id="section-1">导入并核对报告</h2>
+          <ol>
+              <li>打开<strong>记录</strong>页面并点按 <strong>+</strong>，可通过相机扫描、选取照片、从「文件」导入 PDF/图片或手动添加笔记。</li>
+              <li>核对识别出的条目，点按待确认项即可放大查看对应的原图位置并按需修改。</li>
+              <li>确认后保存。多科室体检报告会整理为一个关联分组，并将总检结论置顶显示。</li>
+            </ol>
+          <details class="demo">
+              <summary>查看截图：浏览医疗记录</summary>
+              <figure>
+                <a href="../assets/img/shot-zh-hans-records.png"><img src="../assets/img/shot-zh-hans-records.png" alt="按时间与类别清晰归档的医疗报告" loading="lazy"></a>
+                <figcaption>按时间与类别清晰归档的医疗报告</figcaption>
+              </figure>
+            </details>
+        </section><section class="doc-section">
+          <h2 id="section-2">概览与趋势追踪</h2>
+          <ol>
+              <li>在<strong>概览</strong>页可快速查看近期关键指标、当前用药、过敏警示、待接种提醒及 Apple 健康摘要。</li>
+              <li>在<strong>趋势</strong>页可跨医院对比同一指标的历史变化；Med-X 会自动换算为你偏好的单位，并在曲线后方标注各份报告自带的参考范围。</li>
+              <li>需要表格备份时，可在趋势页右上角导出数据表格。</li>
+            </ol>
+          <details class="demo">
+              <summary>查看截图：查看检验趋势与参考范围</summary>
+              <figure>
+                <a href="../assets/img/shot-zh-hans-trends.png"><img src="../assets/img/shot-zh-hans-trends.png" alt="自动统一单位并绘制参考范围带" loading="lazy"></a>
+                <figcaption>自动统一单位并绘制参考范围带</figcaption>
+              </figure>
+            </details>
+        </section><section class="doc-section">
+          <h2 id="section-3">准备就诊与「给医生」摘要</h2>
+          <ol>
+              <li>在<strong>概览</strong>页点按<strong>准备就诊</strong>。</li>
+              <li>在<strong>症状记录</strong>中按引导梳理主要不适，并提前写下想向医生确认的问题；若出现紧急警示信号，应用会立即提示当地急救电话。</li>
+              <li>切换至<strong>给医生</strong>标签页查看清晰的一页交接摘要，可直接全屏手持给医生看，或导出打印为 PDF。</li>
+            </ol>
+          <details class="demo">
+              <summary>查看截图：准备就诊与医生摘要</summary>
+              <figure>
+                <a href="../assets/img/shot-zh-hans-visit.png"><img src="../assets/img/shot-zh-hans-visit.png" alt="结构化问诊准备与一页医生参考页" loading="lazy"></a>
+                <figcaption>结构化问诊准备与一页医生参考页</figcaption>
+              </figure>
+            </details>
+        </section><section class="doc-section">
+          <h2 id="section-4">家庭成员、用药与疫苗</h2>
+          <ol>
+              <li>点按左上角成员切换按钮即可新增或切换家庭成员，每位成员的数据相互独立。</li>
+              <li>在<strong>档案</strong>页填写过敏史、基础体征、既往诊断及重要安全信息。</li>
+              <li>在<strong>用药</strong>中维护在用药品，添加时若存在重复成分会自动提示。</li>
+              <li>在<strong>疫苗接种</strong>中拍摄接种本或手动记录剂次，并查看常规接种建议。</li>
+            </ol>
           
-<p>首次打开 Med-X 时，应用会在本机自动创建受保护的加密存储空间。每位家庭成员拥有完全独立的 <strong>SQLCipher 4.19.0</strong> 数据库与仅存放在本机钥匙串（Device-only Keychain）中的专属密钥，受 iOS 完全文件保护（<code>NSFileProtectionComplete</code>）守护。</p>
-<ul>
-  <li><strong>开启面容 ID 锁定：</strong>默认情况下，手机解锁后可直接打开档案库。前往 <strong>档案 → 设置 → 需要面容 ID</strong> 开启后，每次启动均需面容 ID 或设备密码验证，并在退入后台时立即锁定清空界面状态。</li>
-  <li><strong>回收站与撤销：</strong>所有保存、修改与删除操作均有记录。在 <strong>设置 → 回收站</strong> 中可随时恢复误删报告（包含其结构化指标、趋势点与原始页面）或撤销某次编辑。</li>
-  <li><strong>抹掉所有数据：</strong>在 <strong>设置 → 抹掉所有数据</strong> 中输入 <code>ERASE</code> 并验证身份，即可彻底清除全部成员档案库、密钥、学习记忆与附件（不会影响 Apple 健康中的数据）。</li>
-</ul>
-<div class="callout"><strong>真机设备要求：</strong>为保障大页数 PDF 渲染与本机 OCR 的内存稳定性，真机运行需配备 A17 Pro 及以上芯片与至少 8 GB 内存的 iPhone 机型（iPhone 15 Pro 及后续机型）。</div>
-
-        </section><section id="importing-reports">
-          <h2>2. 导入与核对检查报告</h2>
+        </section><section class="doc-section">
+          <h2 id="section-5">Apple 智能与端侧学习</h2>
+          <ol>
+              <li>在受支持的设备上，可前往<strong>设置 › Apple 智能</strong>开启或关闭辅助整理与病史摘要功能。</li>
+              <li>在<strong>设置 › 端侧学习</strong>中，可选择是否从你确认过的报告中学习版式和指标别名，也可随时点按<strong>忘掉所有学习内容</strong>重置。</li>
+            </ol>
           
-<p>切换至 <strong>记录</strong> 标签页，顶部提供四种导入入口：</p>
-<ul>
-  <li><strong>扫描：</strong>调用文档相机拍摄纸质检验单或检查报告。</li>
-  <li><strong>照片：</strong>通过系统隐私照片选择器选取相册图片，无需授予完整相册权限。</li>
-  <li><strong>文件：</strong>从「文件」App 导入 PDF 或图片（JPEG / PNG / HEIC），单份文件上限 <strong>30 页 / 15 MB</strong>。</li>
-  <li><strong>笔记：</strong>手动录入症状记录或单项监测数值。</li>
-</ul>
-<h3>七大医学检查类别与体检自动拆分</h3>
-<p>Med-X 结合斜率校正 Vision OCR 与递归 XY 版面分割，精准区分表格行、图片批注与多栏排版，支持<em>检验医学、病理、医学影像、核医学、内镜、电生理</em>与<em>功能检查</em>七大类别：</p>
-<ul>
-  <li><strong>体检整包拆分：</strong>导入多科室健康体检报告时，系统自动识别一般检查、内外科、血常规、肝肾功、超声、心电图及总检结论并拆分为独立条目，在「记录」中以折叠整包卡片展示，总检结论置顶显示。</li>
-  <li><strong>纸质心电图保护：</strong>检测到 4 个以上导联名称时，自动将心电波形网格区域保存为可缩放图片，避免网格刻度线干扰参数识别，同时结构化提取心率、PR、QRS、QT/QTc 等参数。</li>
-  <li><strong>智能核对与溯源：</strong>高置信度行自动勾选；存在疑似小数点丢失、单位冲突或错行风险的项目会排在最前并标注角标，点击行内原图切片即可全屏缩放核对。</li>
-  <li><strong>修订历史：</strong>已保存的报告支持随时编辑，系统始终保留原始印刷读数，并在 <strong>报告详情 → ⋯ → 编辑历史</strong> 中保留每次修改快照。</li>
-</ul>
-
-        </section><section id="trends-followups">
-          <h2>3. 趋势追踪、随访与病史摘要</h2>
+        </section><section class="doc-section">
+          <h2 id="section-6">Apple 健康、面容 ID 与删除数据</h2>
+          <ol>
+              <li>在<strong>设置 › Apple 健康</strong>中可为机主本人开启只读健康汇总；Med-X 不会向 Apple 健康写入数据。</li>
+              <li>在设置中开启<strong>需要面容 ID</strong> 后，退出应用将自动锁定。</li>
+              <li>删除的记录会先进入<strong>回收站</strong>方便恢复；如需彻底清空，可在设置中使用<strong>重置所有数据</strong>。</li>
+            </ol>
           
-<ul>
-  <li><strong>跨院单位统一趋势：</strong>同一指标在不同医院可能采用不同计量单位（如 mg/dL 与 mmol/L）。<strong>趋势</strong>页会依据医学目录显式换算规则自动转换至你最常用的单位，并将每份报告自带的参考范围绘制为背景参考带。点击曲线上的任意数据点可直接定位原始报告页面。</li>
-  <li><strong>导出 CSV 表格：</strong>点击「趋势」右上角分享按钮，可将全部检验结果（含换算值、原始印刷值、参考范围、状态、医院名称与 LOINC 编码）导出为带 UTF-8 BOM 的 CSV 文件。</li>
-  <li><strong>报告要求的复查提醒：</strong>当影像、内镜或体检结论中出现“建议 6 个月后复查胸部 CT”“3-6 个月随访”等相对时间要求时，Med-X 会根据报告日期自动推算到期日，并在 <strong>概览 → 随访</strong> 中提醒即将到期或逾期项目，支持一键添加至系统日历（无需提前授予日历读取权限）。</li>
-  <li><strong>病情经过与病史摘要：</strong>「病情经过」仅依据已保存诊断生成发展脉络并附带编号引用；「病史摘要」生成结构化编号事实表，在支持的 iOS 26+ 设备上可开启本机 Apple 智能改写为通顺段落，并通过 <code>HistoryCheck</code> 逐句校验日期、数值与诊断名称是否完全忠实于事实表。</li>
-</ul>
-
-        </section><section id="visit-prep">
-          <h2>4. 就诊准备与「给医生」参考页</h2>
+        </section><section class="doc-section">
+          <h2 id="section-7">日志与反馈</h2>
+          <ol>
+              <li>前往<strong>设置 › 关于 › 日志与反馈</strong>，可直接调起邮箱向 <a href="mailto:contact@yhxue.com">contact@yhxue.com</a> 反馈问题或建议。</li>
+              <li>发送前可自由选择是否附带脱敏 <strong>.mtxt</strong> 诊断日志和基础设备信息，并可先预览日志全文确认不含个人医疗内容。</li>
+              <li>你也可以随时单独导出或清除本地诊断日志。</li>
+            </ol>
           
-<p>在 <strong>概览 → 准备就诊</strong> 中完成看病前整理：</p>
-<ul>
-  <li><strong>症状记录：</strong>基于 OLDCARTS 临床问诊结构引导记录起病时间、部位、持续时长、性质及诱因。</li>
-  <li><strong>急症红旗拦截：</strong>若输入内容匹配潜在高危急症表现，系统会保守弹窗提示并依据当前地区展示当地急救电话（可按需开启「使用期间定位」自动匹配所在国家/地区，或手动切换）。</li>
-  <li><strong>给医生：</strong>按临床转诊阅读顺序整理警示事项、当前用药、异常化验及前值对比、近期正常指标、原报告结论与你的提问清单；支持全屏手持展示模式，以及一键生成并分享/打印 <strong>A4 或 Letter 分页 PDF</strong>。</li>
-</ul>
-
-        </section><section id="family-vaccines-meds">
-          <h2>5. 家庭成员、疫苗接种与用药管理</h2>
+        </section><section class="doc-section">
+          <h2 id="section-8">常见问题</h2>
+          <p><strong>使用 Med-X 需要联网吗？</strong> 不需要。扫描报告、查看趋势、生成就诊摘要与管理家庭成员均可离线在设备上完成。</p>
+            <p><strong>Med-X 会给出医疗诊断吗？</strong> 不会。Med-X 仅帮助你整理自己的医疗资料，请始终对照原始报告核对数字，并向专业医师咨询诊疗意见。</p>
+            <p><strong>.mtxt 诊断日志里有什么？</strong> 仅包含最近 7 天的脱敏运行事件、耗时和错误代码，不包含姓名、检验数值、诊断、药品、备注或识别出的报告文字。</p>
+            <p><strong>如何获取帮助？</strong> 在「设置 › 关于 › 日志与反馈」中提交，或发送邮件至 <a href="mailto:contact@yhxue.com">contact@yhxue.com</a>。</p>
           
-<ul>
-  <li><strong>多成员独立切换：</strong>点击任意页面左上角的成员头像胶囊即可切换或新增家庭成员（本人、父母、子女等）。各成员的数据、自适应学习模型与密钥彻底物理隔离。</li>
-  <li><strong>疫苗接种建议：</strong>内置 39 种常用与风险疫苗，支持拍照或导入接种证自动提取疫苗名称与接种日期，并结合年龄、孕期、既往史与自身抗体化验结果（如乙肝表面抗体、甲肝/麻腮风/水痘 IgG），对照中国国家免疫规划（含 2025 百白破与 2026 HPV 更新）及美国 CDC/ACIP 2025 指南生成个性化接种提示。</li>
-  <li><strong>离线用药与重复成分提醒：</strong>基于 RxNorm 离线内置 3,375 种有效成分与 5,728 个商品名，录入多种在用药物时自动比对成分，若发现同一有效成分重复叠加（如复方制剂与单药并用）将立即提醒。</li>
-</ul>
-
-        </section><section id="apple-health">
-          <h2>6. Apple 健康集成（仅限本机机主）</h2>
-          
-<p>仅针对当前设备的机主本人档案，Med-X 可在本机只读汇总最近 <strong>90 天</strong> 的 Apple 健康授权数据（绝不回写任何数据至健康 App）：</p>
-<ul>
-  <li>静息/平均/步行心率、心率变异性（HRV）、房颤历史、血压、呼吸频率、血氧、睡眠腕温变化、体重、最大摄氧量、步数与活动能量。</li>
-  <li><strong>Apple Watch 心电图：</strong>在标准心电图纸网格上还原 I 导联波形，并展示分类结果、平均心率与记录症状。</li>
-  <li><strong>睡眠阶段分析：</strong>自动按单夜数据源去重（避免手表与手机重复累加），对照 AASM/SRS 7 小时参考线呈现深睡/核心/REM 比例及近 7 天与前 4 周的变化趋势。</li>
-  <li><strong>iOS 26 健康用药：</strong>同步展示你在系统「健康」中共享的用药计划与服药打卡率，并可一键加入 Med-X 用药清单。</li>
-</ul>
-
-        </section><section id="on-device-learning">
-          <h2>7. 本机自适应学习与多语言切换</h2>
-          
-<ul>
-  <li><strong>越用越懂你的报告格式：</strong>开启 <strong>设置 → 从我的核对中学习</strong> 后，Med-X 会针对当前成员在本地加密记录医院名称拼写、表头字段、检验别名、版面排布与个人历史数值基线，显著提升后续报告自动勾选率。你可随时查看学习统计或一键清除全部学习数据。</li>
-  <li><strong>三语无缝切换：</strong>完整支持简体中文、繁體中文（台湾常用医学名词）与英文，并支持两岸三地与国际检验缩写交叉识别。在 <strong>档案 → 设置 → 语言</strong> 中可快速跳转系统设置切换语言。</li>
-</ul>
-
-        </section><section id="sources-licences">
-          <h2>8. 医学知识来源与开源许可</h2>
-          
-<p>Med-X 严格遵循可溯源、非黑盒原则，所有术语、参考区间与患者说明均来自公开或合规随包内嵌的医学标准（App 内可在 <strong>设置 → 来源与许可</strong> 查看全文）：</p>
-<ul>
-  <li><strong>LOINC® 2.83：</strong>© Regenstrief Institute, Inc. 含 PHQ-9 (44261-6) 与 GAD-7 (70274-6) © Pfizer Inc.</li>
-  <li><strong>RxNorm：</strong>美国国立医学图书馆（NLM）无版权限制药品成分与商品名数据集。</li>
-  <li><strong>WEO 消化内镜最小标准术语 3.0：</strong>内镜诊断术语与分级定义（如 LA 食管炎、Paris、Forrest、Goligher 分级）。</li>
-  <li><strong>MedlinePlus：</strong>美国 NLM 公共领域健康主题与检验说明，离线储存并以英文原文展示（附来源网址与检索日期）。</li>
-  <li><strong>RSNA 影像报告模板：</strong>用于核对胸部 X 线、腹部/盆腔 CT 报告部位描述完整性。</li>
-  <li><strong>医疗服务项目与检验目录：</strong>参考中国《全国医疗服务价格项目规范》与台湾全民健康保险医疗服务给付项目及支付标准（OGDL-1.0）。</li>
-  <li><strong>SQLCipher 4.19.0 社区版：</strong>© 2025 ZETETIC LLC（类 BSD 开源协议）。</li>
-</ul>
-
         </section>
-        </article>
-      </div>
+      </article>
     </div>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>© 2026 Med-X. 保留所有权利。</div>
-        <div class="footer-links">
-          <a href="../zh-hans/index.html">产品概览</a>
-          <a href="../zh-hans/manual.html">使用手册</a>
-          <a href="../zh-hans/privacy.html">隐私政策</a>
-          <a href="../zh-hans/terms.html">使用条款</a>
+    <div class="footer-container">
+      <div class="footer-links-grid">
+        <div class="footer-col">
+          <div class="footer-col-title">产品</div>
+          <ul>
+            <li><a href="../zh-hans/index.html#overview">概览</a></li>
+            <li><a href="../zh-hans/index.html#features">核心功能</a></li>
+            <li><a href="../zh-hans/index.html#privacy">隐私保护</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">使用指南</div>
+          <ul>
+            <li><a href="../zh-hans/manual.html">使用说明</a></li>
+            <li><a href="../zh-hans/manual.html#section-8">常见问题</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">法律信息</div>
+          <ul>
+            <li><a href="../zh-hans/privacy.html">隐私政策</a></li>
+            <li><a href="../zh-hans/terms.html">使用条款</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">支持与联系</div>
+          <ul>
+            <li><a href="mailto:contact@yhxue.com">contact@yhxue.com</a></li>
+            <li><a href="../zh-hans/manual.html#section-7">日志与反馈</a></li>
+          </ul>
         </div>
       </div>
-      <p class="footer-note">Med-X 为个人健康档案整理与就诊准备工具，不提供医疗诊断、治疗方案、处方建议或临床放行结论。如遇紧急医疗情况，请立即拨打当地急救电话。</p>
+
+      <div class="footer-bottom">
+        <p class="footer-legal-text">Med-X 用于整理个人与家庭健康档案并辅助就诊准备，不属于医疗器械，亦不提供医疗诊断、治疗方案或临床决策依据。Apple、iPhone、iPad、Apple Watch、Face ID 与 Apple 健康为 Apple Inc. 的注册商标。<br>版权所有 © 2026 Yuhang XUE。保留所有权利。</p>
+        <div class="footer-lang-row">
+          <a href="../index.html">English</a> ·
+          <a href="../zh-hans/index.html">简体中文</a> ·
+          <a href="../zh-hant/index.html">繁體中文</a>
+        </div>
+      </div>
     </div>
   </footer>
 </body>

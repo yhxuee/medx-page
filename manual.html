@@ -1,169 +1,188 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>User Manual — Med-X</title>
-  <meta name="description" content="Complete step-by-step guide to using Med-X on iPhone and iPad.">
-  <link rel="canonical" href="https://yhxuee.github.io/medx-page/manual.html">
-  <link rel="alternate" hreflang="en" href="https://yhxuee.github.io/medx-page/manual.html">
-  <link rel="alternate" hreflang="zh-Hans" href="https://yhxuee.github.io/medx-page/zh-hans/manual.html">
-  <link rel="alternate" hreflang="zh-Hant" href="https://yhxuee.github.io/medx-page/zh-hant/manual.html">
-  <link rel="alternate" hreflang="x-default" href="https://yhxuee.github.io/medx-page/manual.html">
-  <link rel="icon" type="image/png" href="assets/img/icon-light.png">
-  <link rel="apple-touch-icon" href="assets/img/icon-light.png">
-  <meta property="og:title" content="User Manual — Med-X">
-  <meta property="og:description" content="Complete step-by-step guide to using Med-X on iPhone and iPad.">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#000000">
+  <title>Med-X User Guide</title>
+  <meta name="description" content="Step-by-step instructions for importing medical reports, tracking trends, preparing doctor summaries, and managing privacy in Med-X.">
+  <link rel="canonical" href="https://med-x.org/manual.html">
+  <link rel="alternate" hreflang="en" href="https://med-x.org/manual.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://med-x.org/zh-hans/manual.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://med-x.org/zh-hant/manual.html">
+  <link rel="alternate" hreflang="x-default" href="https://med-x.org/manual.html">
+  <link rel="icon" type="image/png" href="assets/img/icon-dark.png">
+  <link rel="apple-touch-icon" href="assets/img/icon-dark.png">
+  <meta property="og:title" content="Med-X User Guide">
+  <meta property="og:description" content="Step-by-step instructions for importing medical reports, tracking trends, preparing doctor summaries, and managing privacy in Med-X.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://yhxuee.github.io/medx-page/manual.html">
-  <meta property="og:image" content="https://yhxuee.github.io/medx-page/assets/img/icon-light.png">
+  <meta property="og:url" content="https://med-x.org/manual.html">
+  <meta property="og:image" content="https://med-x.org/assets/img/icon-dark.png">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="nav-inner">
-      <a class="brand" href="index.html">
-        <span class="brand-icon"><picture><source srcset="assets/img/icon-dark.png" media="(prefers-color-scheme: dark)"><img src="assets/img/icon-light.png" alt="Med-X"></picture></span>
+  <header class="site-nav">
+    <nav class="nav-container" aria-label="Med-X">
+      <a href="index.html" class="brand">
+        <img src="assets/img/icon-dark.png" alt="Med-X" width="28" height="28">
         <span>Med-X</span>
       </a>
-      <nav class="nav-links" aria-label="Main">
-        <a href="index.html">Overview</a>
-        <a href="manual.html" class="active">User Manual</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Use</a>
-      </nav>
-      <div class="lang-switch" aria-label="Language"><a href="manual.html" class="current">English</a><a href="zh-hans/manual.html">简体中文</a><a href="zh-hant/manual.html">繁體中文</a></div>
-    </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="manual.html" class="active">User Guide</a></li>
+        <li><a href="terms.html">Terms of Use</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-switch" aria-label="Language"><a href="manual.html" class="active" lang="en">EN</a><a href="zh-hans/manual.html" lang="zh-Hans">简</a><a href="zh-hant/manual.html" lang="zh-Hant">繁</a></div>
+        <a href="mailto:contact@yhxue.com" class="btn-nav-cta">Contact</a>
+      </div>
+    </nav>
   </header>
 
   <main>
 
     <section class="doc-hero">
-      <div class="container">
-        <div class="eyebrow">Documentation</div>
-        <h1>Med-X User Manual</h1>
-        <p>Everything you need to import reports, verify OCR readings, track trends, manage family vaults, and prepare for clinical visits.</p>
-        <div class="doc-meta">Applies to Med-X 1.0 · iOS 17 or later (Apple Intelligence features require supported iOS 26+ hardware)</div>
-      </div>
+      <div class="hero-eyebrow"><span>User Guide</span></div>
+      <h1 class="doc-title">Med-X User Guide</h1>
+      <div class="doc-intro"><p>Updated 24 November 2026. Choose a topic below and follow the steps. Demonstrations use sample data.</p></div>
+      
     </section>
-    <div class="container">
-      <div class="doc-layout">
-        <aside class="doc-sidebar" aria-label="Contents">
-          <div class="doc-sidebar-title">Contents</div>
-          <ul class="doc-toc"><li><a href="#vault-security">1. Getting Started & Vault Security</a></li><li><a href="#importing-reports">2. Importing & Reviewing Reports</a></li><li><a href="#trends-followups">3. Trends, Follow-Ups & Summaries</a></li><li><a href="#visit-prep">4. Preparing for Your Visit</a></li><li><a href="#family-vaccines-meds">5. Family Profiles, Vaccines & Medicines</a></li><li><a href="#apple-health">6. Apple Health Integration</a></li><li><a href="#on-device-learning">7. On-Device Learning & Language</a></li><li><a href="#sources-licences">8. Knowledge Sources & Licences</a></li></ul>
-        </aside>
-        <article class="doc-content">
-          <section id="vault-security">
-          <h2>1. Getting Started & Vault Security</h2>
+    <div class="doc-layout">
+      <nav class="doc-toc" aria-label="Contents">
+        <h2>Contents</h2>
+        <ol><li><a href="#section-1">Import and check reports</a></li><li><a href="#section-2">Summary and trends</a></li><li><a href="#section-3">Prepare for a visit</a></li><li><a href="#section-4">Family profiles, medicines, and vaccines</a></li><li><a href="#section-5">Apple Intelligence and on-device learning</a></li><li><a href="#section-6">Apple Health, Face ID, and deleting data</a></li><li><a href="#section-7">Feedback and diagnostics</a></li><li><a href="#section-8">FAQ</a></li></ol>
+      </nav>
+      <article class="doc-body">
+        <section class="doc-section">
+          <h2 id="section-1">Import and check reports</h2>
+          <ol>
+              <li>Open <strong>Records</strong> and tap <strong>+</strong> to scan with the camera, pick photos, import a PDF or image from Files, or write a manual note.</li>
+              <li>Review the recognized items side by side with the original page. Tap any highlighted item to zoom directly onto that line and adjust it if needed.</li>
+              <li>Confirm and save. Multi-section check-ups are kept together as a linked group with the overall conclusion on top.</li>
+            </ol>
+          <details class="demo">
+              <summary>View screenshot: Browse organized records</summary>
+              <figure>
+                <a href="assets/img/shot-en-records.png"><img src="assets/img/shot-en-records.png" alt="Records organized by date and category" loading="lazy"></a>
+                <figcaption>Records organized by date and category</figcaption>
+              </figure>
+            </details>
+        </section><section class="doc-section">
+          <h2 id="section-2">Summary and trends</h2>
+          <ol>
+              <li>Open <strong>Summary</strong> to see recent key results, active medicines, allergies, vaccination reminders, and your Apple Health overview.</li>
+              <li>Open <strong>Trends</strong> to compare results across visits and hospitals. Med-X converts compatible units into your preferred unit and shows each report’s printed reference range behind the chart.</li>
+              <li>Tap <strong>Export</strong> in Trends whenever you want a spreadsheet copy of your lab results.</li>
+            </ol>
+          <details class="demo">
+              <summary>View screenshot: Lab trends and reference ranges</summary>
+              <figure>
+                <a href="assets/img/shot-en-trends.png"><img src="assets/img/shot-en-trends.png" alt="Track changes across hospitals in one chart" loading="lazy"></a>
+                <figcaption>Track changes across hospitals in one chart</figcaption>
+              </figure>
+            </details>
+        </section><section class="doc-section">
+          <h2 id="section-3">Prepare for a visit</h2>
+          <ol>
+              <li>From <strong>Summary</strong>, tap <strong>Prepare for a visit</strong>.</li>
+              <li>Use <strong>Symptom intake</strong> to note what prompted the visit and list questions you want to ask your doctor. If urgent warning signs appear, Med-X shows local emergency numbers right away.</li>
+              <li>Switch to <strong>For the doctor</strong> to view a clean, clinician-friendly handoff sheet. Tap <strong>Show to doctor (full screen)</strong> in the clinic or share and print it as a PDF.</li>
+            </ol>
+          <details class="demo">
+              <summary>View screenshot: Prepare for a visit</summary>
+              <figure>
+                <a href="assets/img/shot-en-visit.png"><img src="assets/img/shot-en-visit.png" alt="Structured intake and doctor-ready summary" loading="lazy"></a>
+                <figcaption>Structured intake and doctor-ready summary</figcaption>
+              </figure>
+            </details>
+        </section><section class="doc-section">
+          <h2 id="section-4">Family profiles, medicines, and vaccines</h2>
+          <ol>
+              <li>Tap the person switcher at the top left to add or switch between family members. Each member’s records stay separate.</li>
+              <li>Open <strong>Profile</strong> to record allergies, basic vitals, past diagnoses, and important safety notes.</li>
+              <li>Use <strong>Medicines</strong> to track active prescriptions and receive alerts if two entries share an active ingredient.</li>
+              <li>Use <strong>Vaccinations</strong> to scan an immunization card or add doses manually and review routine schedule suggestions.</li>
+            </ol>
           
-<p>When you open Med-X for the first time, it creates an encrypted local vault on your device. Each family profile owns a separate <strong>SQLCipher 4.19.0</strong> database and its own encryption key stored in the device-only Keychain under iOS Complete File Protection.</p>
-<ul>
-  <li><strong>Optional Face ID Lock:</strong> By default, the vault opens automatically when your iPhone is unlocked. Go to <strong>Profile → Settings → Require Face ID</strong> to require biometric or passcode authentication on every launch and lock automatically when entering the background.</li>
-  <li><strong>Recycle Bin:</strong> Deleted reports, notes, and edits are logged in <strong>Settings → Recycle bin</strong>. You can restore deleted reports (along with their facts, trend points, and source pages) or undo edits at any time.</li>
-  <li><strong>Reset All Data:</strong> In <strong>Settings → Reset all data</strong>, type <code>ERASE</code> and authenticate to permanently wipe all vaults, keys, learned layouts, and attachments. Apple Health data is never modified.</li>
-</ul>
-<div class="callout"><strong>Real-device eligibility:</strong> On physical devices, Med-X verifies an iPhone 15 Pro generation or later with at least 8 GB RAM to ensure smooth local OCR and PDF rendering within memory limits.</div>
-
-        </section><section id="importing-reports">
-          <h2>2. Importing & Reviewing Reports</h2>
+        </section><section class="doc-section">
+          <h2 id="section-5">Apple Intelligence and on-device learning</h2>
+          <ol>
+              <li>On supported devices, open <strong>Settings › Apple Intelligence</strong> to enable or disable optional on-device assistance for tidying unclear reports and drafting history summaries.</li>
+              <li>In <strong>Settings › On-Device Learning</strong>, you can allow Med-X to learn layouts and test names from reports you confirm, or tap <strong>Forget everything learned</strong> at any time.</li>
+            </ol>
           
-<p>Open the <strong>Records</strong> tab and choose one of four import actions at the top:</p>
-<ul>
-  <li><strong>Scan:</strong> Capture paper reports using the document camera.</li>
-  <li><strong>Photo:</strong> Select existing images privately via the system photo picker (no full Photo Library permission required).</li>
-  <li><strong>File:</strong> Import PDFs or images (JPEG, PNG, HEIC) from the Files app, up to <strong>30 pages</strong> and <strong>15 MB</strong> per file.</li>
-  <li><strong>Note:</strong> Enter a manual clinical note or single measurement directly.</li>
-</ul>
-<h3>7 Diagnostic Families & Check-Up Splitting</h3>
-<p>Med-X classifies reports across seven families — <em>Laboratory Medicine, Anatomic Pathology, Medical Imaging, Nuclear Medicine, Endoscopy, Electrophysiology,</em> and <em>Functional Tests</em> — using layout XY-cut block segmentation and skew-corrected Vision OCR.</p>
-<ul>
-  <li><strong>Physical Examinations:</strong> Multi-section check-up reports (such as general exam, CBC, liver panel, abdominal ultrasound, ECG, and overall conclusions) are automatically split into individual items grouped under one shared bundle.</li>
-  <li><strong>Paper ECGs:</strong> Pages containing 4 or more lead labels preserve the waveform tracing region as a zoomable graphic so grid lines and calibration marks never pollute extracted text.</li>
-  <li><strong>Review & Verification:</strong> High-confidence rows are pre-checked; uncertain values, units, ranges, or split decimals appear at the top with review badges and inline crops of the original line. Tap any crop to pinch-zoom full screen.</li>
-  <li><strong>Edit History:</strong> Saved reports remain editable. Every edit preserves the original printed reading and records a restorable snapshot under <strong>Report → ⋯ → Edit history</strong>.</li>
-</ul>
-
-        </section><section id="trends-followups">
-          <h2>3. Trends, Follow-Ups & Summaries</h2>
+        </section><section class="doc-section">
+          <h2 id="section-6">Apple Health, Face ID, and deleting data</h2>
+          <ol>
+              <li>Open <strong>Settings › Apple Health</strong> to connect read-only recent health metrics for the device owner. Med-X never writes back to Apple Health.</li>
+              <li>Turn on <strong>Require Face ID</strong> in Settings to lock Med-X when you leave the app.</li>
+              <li>Deleted records move to the <strong>Recycle bin</strong> first so you can restore them if needed. Use <strong>Reset all data</strong> in Settings to erase everything permanently.</li>
+            </ol>
           
-<p>Once reports are saved, Med-X organizes your longitudinal data across the <strong>Summary</strong> and <strong>Trends</strong> tabs:</p>
-<ul>
-  <li><strong>Unified Unit Trends:</strong> Results for the same test across different hospitals are converted using explicit catalog rules into your most frequently used unit, with each report's printed reference range plotted as a shaded band. Tap any data point to jump directly to its source page.</li>
-  <li><strong>Export Results (CSV):</strong> Tap the share button in <strong>Trends</strong> to export all lab measurements (with series unit, printed value, printed range, status, facility, and LOINC code) in UTF-8 with BOM for Excel and Numbers.</li>
-  <li><strong>Follow-Ups:</strong> Relative follow-up intervals found in recommendations or conclusions (e.g., “repeat chest CT in 6 months”) automatically compute a due date from the report date, track overdue/upcoming status, and offer one-tap <strong>Add to Calendar</strong> without requesting Calendar permission.</li>
-  <li><strong>Condition History & History Summary:</strong> Condition history compiles verbatim saved diagnoses with numbered source citations. History summary generates a numbered fact sheet and (optionally on supported iOS 26+ devices) an on-device Apple Intelligence narrative verified sentence-by-sentence by <code>HistoryCheck</code> to prevent hallucinated dates, numbers, or diagnoses.</li>
-</ul>
-
-        </section><section id="visit-prep">
-          <h2>4. Preparing for Your Visit</h2>
+        </section><section class="doc-section">
+          <h2 id="section-7">Feedback and diagnostics</h2>
+          <ol>
+              <li>Open <strong>Settings › About › Feedback &amp; Diagnostics</strong> to report an issue or share a suggestion by email (<a href="mailto:contact@yhxue.com">contact@yhxue.com</a>).</li>
+              <li>You can choose whether to attach a desensitized <strong>.mtxt</strong> diagnostic log and basic device information, and you can preview the exact file before sending.</li>
+              <li>You can also export or clear the local diagnostic log at any time.</li>
+            </ol>
           
-<p>From <strong>Summary → Prepare for a visit</strong>, you can organize concerns before seeing a clinician:</p>
-<ul>
-  <li><strong>Symptom Intake:</strong> Structured OLDCARTS prompts help document onset, location, duration, characteristics, and severity.</li>
-  <li><strong>Emergency Red-Flag Intercept:</strong> Conservative local pattern matching interrupts if critical emergency symptoms are entered and displays region-aware local emergency numbers (using optional When-In-Use location or manual region selection).</li>
-  <li><strong>For the Doctor:</strong> Presents a clinician-ordered referral view — safety alerts, active medicines, out-of-range results with previous values, recent normal results, verbatim conclusions, and your visit questions — with full-screen handover mode and paginated <strong>A4 / Letter PDF export</strong>.</li>
-</ul>
-
-        </section><section id="family-vaccines-meds">
-          <h2>5. Family Profiles, Vaccines & Medicines</h2>
+        </section><section class="doc-section">
+          <h2 id="section-8">FAQ</h2>
+          <p><strong>Does Med-X require an internet connection?</strong> No. Scanning reports, reviewing trends, preparing visit summaries, and managing family profiles all work offline on your device.</p>
+            <p><strong>Can Med-X diagnose a condition?</strong> No. Med-X organizes your own documents and notes. Always verify recognized figures against original reports and consult a qualified doctor.</p>
+            <p><strong>What is inside a .mtxt diagnostic log?</strong> Only desensitized operational events, timings, and error codes from the past seven days. It never contains names, medical values, diagnoses, medicines, notes, or recognized report text.</p>
+            <p><strong>Where can I get help?</strong> Use Feedback &amp; Diagnostics in Settings › About, or email <a href="mailto:contact@yhxue.com">contact@yhxue.com</a>.</p>
           
-<ul>
-  <li><strong>Family Profiles:</strong> Switch or add profiles (Self, Parent, Child, etc.) from the top-left profile chip in any tab. Each profile keeps completely isolated reports, learned layouts, and encryption keys. Patient-reported profile fields stay clearly labeled separately from document-backed records.</li>
-  <li><strong>Vaccinations:</strong> Track doses across 39 vaccines, scan or attach encrypted vaccination certificate proofs to auto-fill dates and products, and review schedule suggestions grounded in CDC/ACIP 2025, China National Immunization Program (incl. 2025 DTaP & 2026 HPV updates), and your saved antibody titers.</li>
-  <li><strong>Medicines:</strong> Search 3,375 RxNorm active ingredients and 5,728 brand names completely offline. Med-X warns automatically if two active medicines share an ingredient.</li>
-</ul>
-
-        </section><section id="apple-health">
-          <h2>6. Apple Health Integration</h2>
-          
-<p>For the device-owner profile only, Med-X can read (never write) the past <strong>90 days</strong> of selected Apple Health data on-device:</p>
-<ul>
-  <li>Resting, average, and walking heart rate, HRV, AFib History, blood pressure, respiratory rate, blood oxygen, sleeping wrist temperature delta, weight, VO₂ max, steps, and active energy.</li>
-  <li><strong>Apple Watch ECG:</strong> Displays Lead I waveform tracings on standard ECG paper alongside classification, average heart rate, and logged symptoms.</li>
-  <li><strong>Sleep Stages:</strong> Deduplicates overlapping watch/phone sources per night, showing nightly stages against the 7-hour AASM/SRS benchmark and 7-day vs 4-week shifts.</li>
-  <li><strong>iOS 26 Health Medications:</strong> Displays shared scheduled doses and adherence alongside your Med-X medicine list.</li>
-</ul>
-
-        </section><section id="on-device-learning">
-          <h2>7. On-Device Learning & Language</h2>
-          
-<ul>
-  <li><strong>Adaptive Learning:</strong> When enabled in <strong>Settings → Learn from my reviews</strong>, Med-X locally learns your hospital names, header labels, test aliases, report layouts, and personal baseline values per profile to speed up future reviews. You can inspect counters or wipe all learned data at any time.</li>
-  <li><strong>Multilingual Support:</strong> Med-X supports <strong>English</strong>, <strong>Simplified Chinese (简体中文)</strong>, and <strong>Traditional Chinese (繁體中文)</strong>, including cross-script matching of mainland China, Taiwan, Hong Kong, and international lab terms. Switch app language via <strong>Profile → Settings → Language</strong>.</li>
-</ul>
-
-        </section><section id="sources-licences">
-          <h2>8. Knowledge Sources & Licences</h2>
-          
-<p>All reference terms and patient explanations in Med-X come from documented, offline-bundled clinical standards (also viewable anytime inside <strong>Settings → Sources & licences</strong>):</p>
-<ul>
-  <li><strong>LOINC® 2.83:</strong> © Regenstrief Institute, Inc. Includes PHQ-9 (44261-6) and GAD-7 (70274-6) © Pfizer Inc.</li>
-  <li><strong>RxNorm:</strong> License-free medication ingredient and brand catalog from the U.S. National Library of Medicine (NLM).</li>
-  <li><strong>WEO Minimal Standard Terminology 3.0:</strong> Endoscopic diagnosis terms and severity grades (e.g., LA esophagitis, Paris, Forrest, Goligher).</li>
-  <li><strong>MedlinePlus:</strong> Public-domain NLM health topic summaries and lab test explanations, stored offline and shown verbatim in English with attribution.</li>
-  <li><strong>RSNA Reporting Templates:</strong> Structural checklists for radiology completeness verification.</li>
-  <li><strong>Regional Procedure & Lab Nomenclature:</strong> Compiled from China NHC National Medical Service Price Item Specification and Taiwan NHI Payment Schedule (OGDL-1.0).</li>
-  <li><strong>SQLCipher 4.19.0 Community Edition:</strong> © 2025 ZETETIC LLC (BSD-style licence).</li>
-</ul>
-
         </section>
-        </article>
-      </div>
+      </article>
     </div>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>© 2026 Med-X. All rights reserved.</div>
-        <div class="footer-links">
-          <a href="index.html">Overview</a>
-          <a href="manual.html">User Manual</a>
-          <a href="privacy.html">Privacy Policy</a>
-          <a href="terms.html">Terms of Use</a>
+    <div class="footer-container">
+      <div class="footer-links-grid">
+        <div class="footer-col">
+          <div class="footer-col-title">Product</div>
+          <ul>
+            <li><a href="index.html#overview">Overview</a></li>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="index.html#privacy">Privacy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Documentation</div>
+          <ul>
+            <li><a href="manual.html">User Guide</a></li>
+            <li><a href="manual.html#section-8">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Legal</div>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Support</div>
+          <ul>
+            <li><a href="mailto:contact@yhxue.com">contact@yhxue.com</a></li>
+            <li><a href="manual.html#section-7">Feedback & Diagnostics</a></li>
+          </ul>
         </div>
       </div>
-      <p class="footer-note">Med-X is a personal health-record organizer and visit-preparation tool. It does not provide medical diagnoses, treatment recommendations, prescriptions, or clinical clearance. In a medical emergency, call your local emergency number immediately.</p>
+
+      <div class="footer-bottom">
+        <p class="footer-legal-text">Med-X organizes personal health records and helps you prepare for medical visits. It does not provide medical diagnosis, treatment advice, or clinical clearance. Apple, iPhone, iPad, Apple Watch, Face ID, and Apple Health are trademarks of Apple Inc.<br>Copyright © 2026 Yuhang XUE. All rights reserved.</p>
+        <div class="footer-lang-row">
+          <a href="index.html">English</a> ·
+          <a href="zh-hans/index.html">简体中文</a> ·
+          <a href="zh-hant/index.html">繁體中文</a>
+        </div>
+      </div>
     </div>
   </footer>
 </body>
