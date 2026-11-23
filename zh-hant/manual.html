@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>使用手冊 — Med-X</title>
+  <meta name="description" content="Med-X 完整操作指南：報告匯入核對、健檢拆分、趨勢對比、就診準備與家庭加密檔案管理。">
+  <link rel="canonical" href="https://yhxuee.github.io/medx-page/zh-hant/manual.html">
+  <link rel="alternate" hreflang="en" href="https://yhxuee.github.io/medx-page/manual.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://yhxuee.github.io/medx-page/zh-hans/manual.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://yhxuee.github.io/medx-page/zh-hant/manual.html">
+  <link rel="alternate" hreflang="x-default" href="https://yhxuee.github.io/medx-page/manual.html">
+  <link rel="icon" type="image/png" href="../assets/img/icon-light.png">
+  <link rel="apple-touch-icon" href="../assets/img/icon-light.png">
+  <meta property="og:title" content="使用手冊 — Med-X">
+  <meta property="og:description" content="Med-X 完整操作指南：報告匯入核對、健檢拆分、趨勢對比、就診準備與家庭加密檔案管理。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yhxuee.github.io/medx-page/zh-hant/manual.html">
+  <meta property="og:image" content="https://yhxuee.github.io/medx-page/assets/img/icon-light.png">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="brand" href="../zh-hant/index.html">
+        <span class="brand-icon"><picture><source srcset="../assets/img/icon-dark.png" media="(prefers-color-scheme: dark)"><img src="../assets/img/icon-light.png" alt="Med-X"></picture></span>
+        <span>Med-X</span>
+      </a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="../zh-hant/index.html">產品概覽</a>
+        <a href="../zh-hant/manual.html" class="active">使用手冊</a>
+        <a href="../zh-hant/privacy.html">隱私權政策</a>
+        <a href="../zh-hant/terms.html">使用條款</a>
+      </nav>
+      <div class="lang-switch" aria-label="Language"><a href="../manual.html">English</a><a href="../zh-hans/manual.html">简体中文</a><a href="../zh-hant/manual.html" class="current">繁體中文</a></div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="doc-hero">
+      <div class="container">
+        <div class="eyebrow">說明文件</div>
+        <h1>Med-X 使用手冊</h1>
+        <p>了解如何高效掃描與核對檢查報告、追蹤跨院檢驗趨勢、管理家人疫苗用藥，並在就醫前產生專業交接摘要。</p>
+        <div class="doc-meta">適用版本：Med-X 1.0 · 支援 iOS 17 及以上系統（Apple Intelligence 改寫需支援的 iOS 26+ 機型）</div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="doc-layout">
+        <aside class="doc-sidebar" aria-label="目錄">
+          <div class="doc-sidebar-title">目錄</div>
+          <ul class="doc-toc"><li><a href="#vault-security">1. 快速開始與檔案庫安全</a></li><li><a href="#importing-reports">2. 匯入與核對檢查報告</a></li><li><a href="#trends-followups">3. 趨勢追蹤、後續追蹤與病史摘要</a></li><li><a href="#visit-prep">4. 就診準備與「給醫生」參考頁</a></li><li><a href="#family-vaccines-meds">5. 家庭成員、疫苗接種與用藥管理</a></li><li><a href="#apple-health">6. Apple 健康整合（僅限本機擁有者）</a></li><li><a href="#on-device-learning">7. 本機自適應學習與多語系切換</a></li><li><a href="#sources-licences">8. 醫學知識來源與開源授權</a></li></ul>
+        </aside>
+        <article class="doc-content">
+          <section id="vault-security">
+          <h2>1. 快速開始與檔案庫安全</h2>
+          
+<p>首次開啟 Med-X 時，App 會於本機自動建立受保護的加密儲存空間。每位家庭成員擁有完全獨立的 <strong>SQLCipher 4.19.0</strong> 資料庫與僅存放於本機鑰匙圈（Device-only Keychain）的專屬金鑰，並受 iOS 完整檔案保護（<code>NSFileProtectionComplete</code>）守護。</p>
+<ul>
+  <li><strong>開啟 Face ID 鎖定：</strong>預設情況下，手機解鎖後可直接開啟檔案庫。前往 <strong>檔案 → 設定 → 需要 Face ID</strong> 開啟後，每次啟動皆須 Face ID 或裝置密碼驗證，並於進入背景時立即鎖定清除畫面狀態。</li>
+  <li><strong>垃圾桶與復原：</strong>所有儲存、修改與刪除操作皆有紀錄。於 <strong>設定 → 垃圾桶</strong> 中可隨時復原誤刪報告（包含結構化指標、趨勢點與原始頁面）或撤銷某次編輯。</li>
+  <li><strong>抹掉所有資料：</strong>於 <strong>設定 → 抹掉所有資料</strong> 中輸入 <code>ERASE</code> 並驗證身分，即可徹底清除全部成員檔案庫、金鑰、學習記憶與附件（不會影響 Apple 健康中的資料）。</li>
+</ul>
+<div class="callout"><strong>實機裝置需求：</strong>為確保多頁 PDF 繪製與本機 OCR 的記憶體穩定性，實機執行需配備 A17 Pro 及以上晶片與至少 8 GB 記憶體的 iPhone 機型（iPhone 15 Pro 及後續機型）。</div>
+
+        </section><section id="importing-reports">
+          <h2>2. 匯入與核對檢查報告</h2>
+          
+<p>切換至 <strong>記錄</strong> 分頁，頂部提供四種匯入方式：</p>
+<ul>
+  <li><strong>掃描：</strong>呼叫文件相機拍攝紙本檢驗單或檢查報告。</li>
+  <li><strong>照片：</strong>透過系統隱私照片選擇器選取相簿圖片，無須授予完整照片圖庫權限。</li>
+  <li><strong>檔案：</strong>從「檔案」App 匯入 PDF 或圖片（JPEG / PNG / HEIC），單份檔案上限 <strong>30 頁 / 15 MB</strong>。</li>
+  <li><strong>筆記：</strong>手動輸入症狀紀錄或單項監測數值。</li>
+</ul>
+<h3>七大醫學檢查類別與健檢自動拆分</h3>
+<p>Med-X 結合斜率校正 Vision OCR 與遞迴 XY 版面分割，精準區分表格列、圖片批註與多欄排版，支援<em>檢驗醫學、病理、醫學影像、核醫學、內視鏡、電生理</em>與<em>功能檢查</em>七大類別：</p>
+<ul>
+  <li><strong>健檢整包拆分：</strong>匯入多科別健康檢查報告時，系統自動辨識一般檢查、內外科、血液常規、肝腎功能、超音波、心電圖及總檢結論並拆分為獨立項目，於「記錄」中以摺疊整包卡片呈現，總檢結論置頂顯示。</li>
+  <li><strong>紙本心電圖保護：</strong>偵測到 4 個以上導程名稱時，自動將心電波形網格區域保存為可縮放圖片，避免網格刻度線干擾數值辨識，同時結構化提取心率、PR、QRS、QT/QTc 等參數。</li>
+  <li><strong>智慧核對與溯源：</strong>高信心度項目自動勾選；存在疑似小數點遺失、單位衝突或錯行風險的項目會排在最前並標註標籤，點擊行內原圖裁切即可全螢幕縮放核對。</li>
+  <li><strong>修訂歷史：</strong>已儲存報告支援隨時編輯，系統始終保留原始印刷讀數，並於 <strong>報告詳情 → ⋯ → 編輯歷史</strong> 中保存每次修改快照。</li>
+</ul>
+
+        </section><section id="trends-followups">
+          <h2>3. 趨勢追蹤、後續追蹤與病史摘要</h2>
+          
+<ul>
+  <li><strong>跨院單位統一趨勢：</strong>同一指標於不同醫院可能採用不同計量單位（如 mg/dL 與 mmol/L）。<strong>趨勢</strong>分頁會依據醫學目錄顯式換算規則自動轉換至你最常用的單位，並將每份報告自帶的參考範圍繪製為背景參考帶。點擊曲線上的任意資料點可直接定位原始報告頁面。</li>
+  <li><strong>匯出 CSV 表格：</strong>點擊「趨勢」右上角分享按鈕，可將全部檢驗結果（含換算值、原始印刷值、參考範圍、狀態、醫院名稱與 LOINC 代碼）匯出為帶 UTF-8 BOM 的 CSV 檔案。</li>
+  <li><strong>報告要求的追蹤提醒：</strong>當影像、內視鏡或健檢結論中出現「建議 6 個月後複查胸部 CT」「3-6 個月追蹤」等相對時間要求時，Med-X 會依報告日期自動推算到期日，並於 <strong>概覽 → 追蹤</strong> 中提醒即將到期或逾期項目，支援一鍵加入系統行事曆（無須預先授予行事曆讀取權限）。</li>
+  <li><strong>病情經過與病史摘要：</strong>「病情經過」僅依據已儲存診斷產生發展脈絡並附帶編號引用；「病史摘要」產生結構化編號事實表，於支援的 iOS 26+ 裝置上可開啟本機 Apple Intelligence 改寫為通順段落，並通過 <code>HistoryCheck</code> 逐句校驗日期、數值與診斷名稱是否完全忠實於事實表。</li>
+</ul>
+
+        </section><section id="visit-prep">
+          <h2>4. 就診準備與「給醫生」參考頁</h2>
+          
+<p>於 <strong>概覽 → 準備就診</strong> 中完成就醫前整理：</p>
+<ul>
+  <li><strong>症狀記錄：</strong>基於 OLDCARTS 臨床問診結構引導記錄發病時間、部位、持續時長、性質及誘因。</li>
+  <li><strong>急症紅旗攔截：</strong>若輸入內容符合潛在危急症狀表現，系統會保守彈窗提示並依目前地區顯示當地急救電話（可依需要開啟「使用期間定位」自動匹配所在國家/地區，或手動切換）。</li>
+  <li><strong>給醫生：</strong>依臨床轉診閱讀順序整理警示事項、目前用藥、異常檢驗及前值對比、近期正常指標、原報告結論與你的提問清單；支援全螢幕手持展示模式，以及一鍵產生並分享/列印 <strong>A4 或 Letter 分頁 PDF</strong>。</li>
+</ul>
+
+        </section><section id="family-vaccines-meds">
+          <h2>5. 家庭成員、疫苗接種與用藥管理</h2>
+          
+<ul>
+  <li><strong>多成員獨立切換：</strong>點擊任意頁面左上角的成員頭像膠囊即可切換或新增家庭成員（本人、父母、子女等）。各成員的資料、自適應學習模型與金鑰徹底實體隔離。</li>
+  <li><strong>疫苗接種建議：</strong>內建 39 種常用與風險疫苗，支援拍攝或匯入接種證明自動提取疫苗名稱與接種日期，並結合年齡、孕期、既往史與自身抗體檢驗結果（如 B 型肝炎表面抗體、A 肝/麻腮風/水痘 IgG），對照美國 CDC/ACIP 2025 指南與免疫規劃生成個人化接種參考。</li>
+  <li><strong>離線用藥與重複成分提醒：</strong>基於 RxNorm 離線內建 3,375 種有效成分與 5,728 個商品名，錄入多種使用中藥物時自動比對成分，若發現同一有效成分重複疊加將立即提醒。</li>
+</ul>
+
+        </section><section id="apple-health">
+          <h2>6. Apple 健康整合（僅限本機擁有者）</h2>
+          
+<p>僅針對目前裝置的擁有者本人檔案，Med-X 可於本機唯讀彙總最近 <strong>90 天</strong> 的 Apple 健康授權資料（絕不回寫任何資料至健康 App）：</p>
+<ul>
+  <li>靜息/平均/步行心率、心率變異性（HRV）、心房顫動歷史、血壓、呼吸速率、血氧、睡眠手腕溫度變化、體重、最大攝氧量、步數與活動能量。</li>
+  <li><strong>Apple Watch 心電圖：</strong>於標準心電圖紙網格上還原 I 導程波形，並顯示分類結果、平均心率與記錄症狀。</li>
+  <li><strong>睡眠階段分析：</strong>自動依單夜資料來源去重（避免手錶與手機重複累加），對照 AASM/SRS 7 小時參考線呈現深睡/核心/REM 比例及近 7 天與前 4 週的變化趨勢。</li>
+  <li><strong>iOS 26 健康用藥：</strong>同步顯示你於系統「健康」中共享的用藥計畫與服藥紀錄率，並可一鍵加入 Med-X 用藥清單。</li>
+</ul>
+
+        </section><section id="on-device-learning">
+          <h2>7. 本機自適應學習與多語系切換</h2>
+          
+<ul>
+  <li><strong>越用越懂你的報告格式：</strong>開啟 <strong>設定 → 從我的核對中學習</strong> 後，Med-X 會針對目前成員於本機加密記錄醫院名稱拼寫、表頭欄位、檢驗別名（如 血色素 / GPT / 醣化血紅素）、版面排布與個人歷史數值基線，顯著提升後續報告自動勾選率。</li>
+  <li><strong>三語無縫切換：</strong>完整支援繁體中文（台灣常用醫學用語）、簡體中文與英文，並支援兩岸三地與國際檢驗縮寫交叉辨識。於 <strong>檔案 → 設定 → 語言</strong> 中可快速跳轉系統設定切換語系。</li>
+</ul>
+
+        </section><section id="sources-licences">
+          <h2>8. 醫學知識來源與開源授權</h2>
+          
+<p>Med-X 嚴格遵循可溯源、非黑盒原則，所有術語、參考區間與衛教說明皆來自公開或合規隨包內嵌的醫學標準（App 內可於 <strong>設定 → 來源與許可</strong> 查看全文）：</p>
+<ul>
+  <li><strong>LOINC® 2.83：</strong>© Regenstrief Institute, Inc. 含 PHQ-9 (44261-6) 與 GAD-7 (70274-6) © Pfizer Inc.</li>
+  <li><strong>RxNorm：</strong>美國國家醫學圖書館（NLM）無版權限制藥品成分與商品名資料集。</li>
+  <li><strong>WEO 消化內視鏡最小標準術語 3.0：</strong>內視鏡診斷術語與分級定義（如 LA 食道炎、Paris、Forrest、Goligher 分級）。</li>
+  <li><strong>MedlinePlus：</strong>美國 NLM 公共領域健康主題與檢驗說明，離線儲存並以英文原文顯示（附來源網址與檢索日期）。</li>
+  <li><strong>RSNA 影像報告範本：</strong>用於核對胸部 X 光、腹部/骨盆 CT 報告部位描述完整性。</li>
+  <li><strong>醫療服務與檢驗名詞：</strong>參考台灣衛生福利部中央健康保險署醫療服務給付項目及支付標準（政府資料開放授權條款第 1 版 OGDL-1.0）及中國醫療服務價格項目規範。</li>
+  <li><strong>SQLCipher 4.19.0 社群版：</strong>© 2025 ZETETIC LLC（類 BSD 開源授權條款）。</li>
+</ul>
+
+        </section>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>© 2026 Med-X. 保留所有權利。</div>
+        <div class="footer-links">
+          <a href="../zh-hant/index.html">產品概覽</a>
+          <a href="../zh-hant/manual.html">使用手冊</a>
+          <a href="../zh-hant/privacy.html">隱私權政策</a>
+          <a href="../zh-hant/terms.html">使用條款</a>
+        </div>
+      </div>
+      <p class="footer-note">Med-X 為個人健康檔案整理與就診準備工具，不提供醫療診斷、治療方案、處方建議或臨床放行結論。如遇緊急醫療情況，請立即撥打當地急救電話。</p>
+    </div>
+  </footer>
+</body>
+</html>

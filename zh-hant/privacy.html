@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>隱私權政策 — Med-X</title>
+  <meta name="description" content="Med-X 隱私權政策：零資料蒐集、零雲端上傳、零第三方追蹤，所有健康記錄僅於本機加密儲存。">
+  <link rel="canonical" href="https://yhxuee.github.io/medx-page/zh-hant/privacy.html">
+  <link rel="alternate" hreflang="en" href="https://yhxuee.github.io/medx-page/privacy.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://yhxuee.github.io/medx-page/zh-hans/privacy.html">
+  <link rel="alternate" hreflang="zh-Hant" href="https://yhxuee.github.io/medx-page/zh-hant/privacy.html">
+  <link rel="alternate" hreflang="x-default" href="https://yhxuee.github.io/medx-page/privacy.html">
+  <link rel="icon" type="image/png" href="../assets/img/icon-light.png">
+  <link rel="apple-touch-icon" href="../assets/img/icon-light.png">
+  <meta property="og:title" content="隱私權政策 — Med-X">
+  <meta property="og:description" content="Med-X 隱私權政策：零資料蒐集、零雲端上傳、零第三方追蹤，所有健康記錄僅於本機加密儲存。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yhxuee.github.io/medx-page/zh-hant/privacy.html">
+  <meta property="og:image" content="https://yhxuee.github.io/medx-page/assets/img/icon-light.png">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="brand" href="../zh-hant/index.html">
+        <span class="brand-icon"><picture><source srcset="../assets/img/icon-dark.png" media="(prefers-color-scheme: dark)"><img src="../assets/img/icon-light.png" alt="Med-X"></picture></span>
+        <span>Med-X</span>
+      </a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="../zh-hant/index.html">產品概覽</a>
+        <a href="../zh-hant/manual.html">使用手冊</a>
+        <a href="../zh-hant/privacy.html" class="active">隱私權政策</a>
+        <a href="../zh-hant/terms.html">使用條款</a>
+      </nav>
+      <div class="lang-switch" aria-label="Language"><a href="../privacy.html">English</a><a href="../zh-hans/privacy.html">简体中文</a><a href="../zh-hant/privacy.html" class="current">繁體中文</a></div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="doc-hero">
+      <div class="container">
+        <div class="eyebrow">隱私保護</div>
+        <h1>Med-X 隱私權政策</h1>
+        <p>Med-X 的隱私承諾建立於架構本身之上：你的醫療檔案只存在於你的裝置中，從不離開你的掌控。</p>
+        <div class="doc-meta">生效日期：2026 年 11 月 24 日 · 應用識別碼：com.yhxue.medx.app</div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="doc-layout">
+        <aside class="doc-sidebar" aria-label="條款目錄">
+          <div class="doc-sidebar-title">條款目錄</div>
+          <ul class="doc-toc"><li><a href="#overview">1. 零資料蒐集承諾</a></li><li><a href="#storage-encryption">2. 本機加密與金鑰保護機制</a></li><li><a href="#permissions">3. 系統權限用途說明</a></li><li><a href="#system-services">4. 系統服務、檔案匯出與安全邊界</a></li><li><a href="#deletion">5. 資料留存與徹底抹除</a></li><li><a href="#contact">6. 聯絡我們</a></li></ul>
+        </aside>
+        <article class="doc-content">
+          <section id="overview">
+          <h2>1. 零資料蒐集承諾</h2>
+          
+<div class="callout"><strong>App Store 隱私標籤：不蒐集任何資料。</strong> Med-X 應用程式內不包含任何網路傳輸用戶端、雲端後台、第三方統計分析 SDK、廣告追蹤元件或遠端模型下載器。</div>
+<p>依據應用內建的 Apple 隱私清單（<code>PrivacyInfo.xcprivacy</code>），<code>NSPrivacyTracking</code> 為 <code>false</code>，<code>NSPrivacyCollectedDataTypes</code> 為空陣列。你在 Med-X 中掃描、匯入、輸入或查閱的任何醫療健康資訊都不會傳送給開發者或任何第三方。</p>
+
+        </section><section id="storage-encryption">
+          <h2>2. 本機加密與金鑰保護機制</h2>
+          
+<ul>
+  <li><strong>分成員獨立 SQLCipher 資料庫：</strong>每位家庭成員皆擁有單獨的 SQLCipher 4.19.0 加密資料庫與專屬金鑰，不存在跨成員混合的共用臨床資料表。</li>
+  <li><strong>加密註冊表與完整檔案保護：</strong>成員註冊表採用 AES-GCM 認證加密；所有匯入的原始報告圖片與 PDF 附件皆啟用 iOS 最高等級 <code>NSFileProtectionComplete</code> 完整檔案保護。</li>
+  <li><strong>僅限本機的鑰匙圈金鑰與 Face ID：</strong>加密金鑰僅保存於目前裝置的 iOS Keychain 中（不會同步至 iCloud 鑰匙圈）。開啟 <strong>需要 Face ID</strong> 後，金鑰將受生物辨識或裝置密碼保護，且進入背景時自動鎖定並清除記憶體中的展示狀態。</li>
+</ul>
+
+        </section><section id="permissions">
+          <h2>3. 系統權限用途說明</h2>
+          
+<table class="data-table">
+  <thead>
+    <tr><th>系統權限</th><th>在 Med-X 中的用途</th><th>是否離開本機</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>相機</strong></td><td>拍攝紙本檢查報告與疫苗接種證明，僅用於本機 Vision OCR 辨識。</td><td>否</td></tr>
+    <tr><td><strong>照片（系統隱私選擇器）</strong></td><td>由你手動挑選單張或多張報告照片匯入，無須授予完整照片圖庫讀取權限。</td><td>否</td></tr>
+    <tr><td><strong>Face ID</strong></td><td>可選開啟，用於在開啟檔案庫或變更安全設定時驗證本機擁有者身分。</td><td>否（由系統安全隔區處理）</td></tr>
+    <tr><td><strong>Apple 健康（唯讀）</strong></td><td>僅限裝置擁有者本人檔案，於本機彙總近 90 天的量測、睡眠、手錶心電圖與 iOS 26 用藥紀錄；Med-X 絕不會向健康 App 寫入資料。</td><td>否</td></tr>
+    <tr><td><strong>位置資訊（使用 App 期間）</strong></td><td>僅於症狀整理流程中用於判斷目前所在國家或地區，以顯示當地急救電話號碼。</td><td>否</td></tr>
+    <tr><td><strong>麥克風與語音辨識</strong></td><td>僅在你明確同意並啟動就診錄音備忘後，呼叫本機語音辨識進行本地轉錄。</td><td>否</td></tr>
+  </tbody>
+</table>
+
+        </section><section id="system-services">
+          <h2>4. 系統服務、檔案匯出與安全邊界</h2>
+          
+<ul>
+  <li><strong>可選本機 Apple Intelligence：</strong>於支援的 iOS 26+ 裝置上開啟後，「病史摘要」會呼叫系統內建本機模型進行段落改寫；Med-X 從不主動請求雲端算力回退。</li>
+  <li><strong>使用者主動分享與匯出：</strong>當你點擊「匯出結果 (CSV)」「分享或列印為 PDF」或「加入行事曆」時，相關檔案僅於你的裝置上即時產生，並僅於你主動操作時移交系統分享面板或行事曆編輯器。</li>
+  <li><strong>醫生模式剪貼簿：</strong>複製交接摘要時會使用僅限本機的系統剪貼簿項目（不請求通用剪貼簿跨裝置同步），並設定 60 秒後自動過期。</li>
+  <li><strong>系統級上游行為：</strong>Apple 健康資料的裝置間同步、系統整機備份及作業系統語音/基礎模型資源下載皆由 Apple iOS 系統管理，受 Apple 隱私權政策規範。</li>
+</ul>
+
+        </section><section id="deletion">
+          <h2>5. 資料留存與徹底抹除</h2>
+          
+<p>你對本機上的全部資料擁有完全控制權：</p>
+<ul>
+  <li>刪除單份報告或筆記後，可於 <strong>設定 → 垃圾桶</strong> 中復原或徹底清空。</li>
+  <li>使用 <strong>設定 → 抹掉所有資料</strong>（需輸入 <code>ERASE</code> 並通過 Face ID 或裝置密碼確認），將永久銷毀所有成員加密資料庫、鑰匙圈金鑰、垃圾桶歷史、學習紀錄及附件。</li>
+  <li>從 iPhone 移除 Med-X 將同時清除 App 沙盒內的全部本機資料。</li>
+</ul>
+
+        </section><section id="contact">
+          <h2>6. 聯絡我們</h2>
+          
+<p>如對本隱私權政策或 Med-X 的安全設計有任何疑問，歡迎透過支援儲存庫頁面聯絡開發者：<a href="https://github.com/yhxuee/medx-page/issues">github.com/yhxuee/medx-page</a>。</p>
+
+        </section>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>© 2026 Med-X. 保留所有權利。</div>
+        <div class="footer-links">
+          <a href="../zh-hant/index.html">產品概覽</a>
+          <a href="../zh-hant/manual.html">使用手冊</a>
+          <a href="../zh-hant/privacy.html">隱私權政策</a>
+          <a href="../zh-hant/terms.html">使用條款</a>
+        </div>
+      </div>
+      <p class="footer-note">Med-X 為個人健康檔案整理與就診準備工具，不提供醫療診斷、治療方案、處方建議或臨床放行結論。如遇緊急醫療情況，請立即撥打當地急救電話。</p>
+    </div>
+  </footer>
+</body>
+</html>
